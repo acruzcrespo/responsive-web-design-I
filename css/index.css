@@ -69,7 +69,7 @@ h1, h2, h3, h4, h5 {
 
 .container{
 	position: relative;
-	width:1000px;
+	width:990px;
 	padding: 50px 62px 50px 62px;
 	border: 1px;
 	margin: 0 auto;
@@ -139,17 +139,17 @@ main img:last-of-type{
 section:last-of-type{
 	border-bottom: 1px solid;
 }
-.col-1{
+.top-content{
 	display: inline-block;
 	width: 49%;
 	margin-right: 6px;
 }
-.col-2{
+.bottom-content{
 	display: inline-block;
 	width: 32%;
 	margin-right: 9px;
 }
-.col-top{
+.header{
 	width: 49%;
 	margin: 0 auto;
 }
@@ -161,8 +161,8 @@ footer .copyright{
 	text-align: center;
 	padding-top: 50px;
 }
-
-@media(max-width: 600px){
+/* tablet version*/ 
+@media(max-width: 800px){
     .container{
         width: 100%;
     }         
@@ -202,7 +202,7 @@ footer .copyright{
         flex-direction: column;
     }
     
-    .col-top{
+    .top-content{
         display: flex;
         flex-direction:column;
         width: 100%;
@@ -215,6 +215,7 @@ footer .copyright{
     }
 }
 
+/* mobile version*/
     @media(max-width: 500px){
         .container{
             width: 100%;
@@ -225,7 +226,7 @@ footer .copyright{
             display: flex;
             flex-direction: column-reverse;
             width: 100%;
-            color: gray;            
+            color: gray;      
           }
 
           .logo{
@@ -269,20 +270,20 @@ footer .copyright{
             display: block;
         }
 
-        .col-top{
+        .header{
             display: flex;
             flex-direction:column;
             width: 100%;
             justify-content: space-evenly;
         }
 
-        .col-1{
+        .top-content{
             padding-top: 20px;
             display: block;
             width: 100%;
         }
 
-        .col-2{
+        .bottom-content{
             padding-top: 20px;
             display: flex;
             flex-direction: column;
